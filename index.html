@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
+    
+    <title>Rock Paper Scissors</title>
+</head>
+<body>
+   <div class="container">
+       <h1>Rock Paper Scissors</h1>
+       <div class="scores">
+            <p>
+                Computer: <span id="computer_score">0</span>
+            </p>
+            <p>
+                Player: <span id="player_score">0</span>
+            </p>
+        </div> 
+       <div class="weapans">
+           <button onclick="checker('rock')">
+               <i class="fa-solid fa-hand-rock"></i>
+           </button>
+           <button onclick="checker('paper')">
+               <i class="fa-solid fa-hand-paper"></i>
+           </button>
+           <button onclick="checker('scissors')">
+               <i class="fa-solid fa-hand-scissors"></i>
+           </button>
+       </div>
+       <div class="details">
+           <p id="player_choice"></p>
+           <p id="computer_choice"></p>
+           <p id="result"></p>
+       </div>
+   </div>
+
+   <script src="script.js"></script>
+</body>
+</html>
